@@ -6,9 +6,13 @@ Java의 Swing, Socket, Thread를 활용한 3~4인 로컬 서버 멀티플레이 
 ## 개발 기간: 
 2021.10. ~ 2021.12. (2주)  
 
+<br>
+
 ## 참여 인원: 2인
 - 김우성: 백앤드 개발
 - 손성한: 프론트앤드 개발
+
+<br>
 
 ## 기술 스택
 - IDE: Eclipse 2019-12
@@ -20,13 +24,21 @@ Java의 Swing, Socket, Thread를 활용한 3~4인 로컬 서버 멀티플레이 
   - Java Thread
   - Java Lock
 
+<br>
+
 ## 게임 이미지 (추가 이미지: ./Demon 참조)
 ![InGameImage1](Demon/InGameImage1.png)
 ![InGameImage2](Demon/InGameImage2.png)
 ![InGameVideo](Demon/InGameVideo.gif)
+### [[시연연상(소리O)](Demon/시연연상소리(O).mp4)]
+
+<br>
 
 ## 시스템 구성도
 ![Diagram](Demon/PyramidBlockStack_UML.png)
+### [[UXF](Demon/PyramidBlockStack_UML.uxf)]
+
+<br>
 
 ## 프로토콜
 - 공통 프로토콜  
@@ -59,7 +71,7 @@ Java의 Swing, Socket, Thread를 활용한 3~4인 로컬 서버 멀티플레이 
 |371|유저 블록 할당|Server -> Client|
 |380|게임 끝| Server->Client|
 
-
+<br>
 
 ## 주요 코드
 
@@ -213,5 +225,10 @@ public class javaGameClientView extends JFrame {
     }
 }
 ```
+<br>
 
-## 기타사항
+## 비고
+- 모든 try-catch문의 예외 상황에서 프로그램 종료나 연결 해제하고 있음. 일정 횟수까지 시도하는 방법으로 개선 필요
+- 각 유저의 채팅에 캐릭터 이미지를 넣는 기능, 이미지를 축소시켜 채팅창으로 전달하는 기능 미구현
+- 채팅 메시지 길이 제한 없음. 이외에도 최악의 사용자를 고려한 설계 필요
+- 게임 자동 시작이 아닌 모든 유저의 동의에 의한 시작, 게임 재시작 등의 게임 기능 미흡
