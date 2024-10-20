@@ -3,7 +3,7 @@ Java의 Swing, Socket, Thread를 활용한 3~4인 로컬 서버 멀티플레이 
 
 <br>
 
-## 개발 기간: 
+## 개발 기간
 2021.10. ~ 2021.12. (2주)  
 
 <br>
@@ -26,7 +26,7 @@ Java의 Swing, Socket, Thread를 활용한 3~4인 로컬 서버 멀티플레이 
 
 <br>
 
-## 게임 이미지 (추가 이미지: ./Demon 참조)
+## 게임 이미지
 ![InGameImage1](Demon/InGameImage1.png)
 ![InGameImage2](Demon/InGameImage2.png)
 ![InGameVideo](Demon/InGameVideo.gif)
