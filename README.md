@@ -30,7 +30,7 @@ Java의 Swing, Socket, Thread를 활용한 3~4인 로컬 서버 멀티플레이 
 ![InGameImage1](Demon/InGameImage1.png)
 ![InGameImage2](Demon/InGameImage2.png)
 ![InGameVideo](Demon/InGameVideo.gif)
-### [[시연연상(소리O)](Demon/시연연상소리(O).mp4)]
+### [[시연연상(소리O)](Demon/시연영상(음성O).mp4)]
 
 <br>
 
