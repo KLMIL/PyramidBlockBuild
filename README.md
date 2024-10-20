@@ -26,7 +26,7 @@ Java의 Swing, Socket, Thread를 활용한 3~4인 로컬 서버 멀티플레이 
 ![InGameVideo](Demon/InGameVideo.gif)
 
 ## 시스템 구성도
-![Diagram](PyramidBlockStack_UML.png)
+![Diagram](Demon/PyramidBlockStack_UML.png)
 
 ## 프로토콜
 - 공통 프로토콜  
