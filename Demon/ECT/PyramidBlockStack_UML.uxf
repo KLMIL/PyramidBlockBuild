@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>351</y>
+      <w>189</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>_JavaGameServer: Class_
+--
+(Field)
+AcceptServer: Class
+UserService: Class
+--
+AppentText(String)
+AppendObject(ChatMsg)
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>585</x>
+      <y>351</y>
+      <w>189</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>_JavaGameClientMain: Class_
+--
+(Field)
+MyAction: Class
+--
+
+
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>477</x>
+      <y>396</y>
+      <w>126</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+socket
+</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>864</x>
+      <y>306</y>
+      <w>189</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>_JavaGameClientView: Class_
+--
+(Field)
+ListenNetwork: Class
+MyMouseEvent: Class
+TextSendAction: Class
+ImageSendAction: Class
+Lock: Class
+--
+SetterFunctions {
+  recvBlock()
+  ...
+}
+SendFunctions {
+  SendMouseEvent()
+  SendMessage()
+  ...
+}
+
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>765</x>
+      <y>351</y>
+      <w>117</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>288</y>
+      <w>189</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_ChatMsg: Class_
+
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>585</x>
+      <y>288</y>
+      <w>189</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_ChatMsg: Class_
+
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>27</x>
+      <y>252</y>
+      <w>477</w>
+      <h>405</h>
+    </coordinates>
+    <panel_attributes>BSS
+--
+layer=-1
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>567</x>
+      <y>252</y>
+      <w>765</w>
+      <h>441</h>
+    </coordinates>
+    <panel_attributes>BSC
+--
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>378</x>
+      <y>306</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>306</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>306</y>
+      <w>189</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>_AcceptServer: Class_
+--
+(Field)
+--
+run()
+
+
+bg=light_gray
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>243</x>
+      <y>360</y>
+      <w>72</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>414</y>
+      <w>189</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>_UserService: Class_
+--
+(Field)
+--
+run()
+GameFunctions {
+  isPlayerDeay()
+  assignUserBlock()
+  ...
+}
+WriteFunctions {
+  WriteAll()
+  WriteOne()
+  ...
+}
+
+bg=light_gray
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>243</x>
+      <y>432</y>
+      <w>72</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>153</x>
+      <y>369</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>585</x>
+      <y>468</y>
+      <w>189</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_MyAction: Class_
+
+
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>423</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>657</x>
+      <y>594</y>
+      <w>189</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>_ImageSendAction: Class_
+--
+(Field)
+--
+actionPerformed()
+
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1107</x>
+      <y>369</y>
+      <w>189</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>_ListenWetwork: Class_
+--
+(Field)
+--
+run()
+
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1107</x>
+      <y>459</y>
+      <w>189</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>_MyMouseEvent: Class_
+--
+(Field)
+--
+mouseClicked()
+mouseMoved()
+...
+
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>873</x>
+      <y>594</y>
+      <w>189</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>_TextSendAction: Class_
+--
+(Field)
+--
+actionPerformed()
+
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1107</x>
+      <y>576</y>
+      <w>189</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>_Lock: Class_
+--
+(Field)
+--
+lock()
+unlock()
+
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1008</x>
+      <y>549</y>
+      <w>63</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>549</y>
+      <w>81</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>837</x>
+      <y>549</y>
+      <w>234</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>432</y>
+      <w>81</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>513</y>
+      <w>81</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+</diagram>
